@@ -167,9 +167,12 @@
       function heatmapChart(rt, out, dt) {
         distMax = d3.max(data, function(d) { return d.distance; });
 
-        rowVals = new Array(distMax);
-        // fill in array holes with landmark names
-        // there's probably a slick D3 way to to this, but it's getting late...
+        height = (distMax * 6);// - margin.top - margin.bottom;
+
+        d3.select("svg").attr("height", height + margin.top); // + margin.bottom);
+        
+        rowVals = new Array(distMax);  
+        // fill in the appropriate array elements with landmark names
         var r = (out == 1) ? "OUTBOUND" : "INBOUND";
         for (var i = 0; i < landmarks.length; i++) {
           var obj = landmarks[i];
@@ -179,8 +182,6 @@
 
           }
         }
-
-        //console.log("dist max: " + distMax + " row values:" + rowVals);
             
         var distLabels = svg.selectAll(".distLabel")
             .data(rowVals, function(d, i) { return d + ":" + i; } );
@@ -195,7 +196,6 @@
 
 
         distLabels.exit().remove();
-
 
         // update
         var cards = svg.selectAll(".tile")

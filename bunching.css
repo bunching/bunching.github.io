@@ -37,7 +37,7 @@ header, footer {
 
 svg {
   font: 10px sans-serif;
-  height: 550px;
+  min-height: 430px;
 }
 
 footer {
