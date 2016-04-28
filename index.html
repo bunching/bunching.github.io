@@ -2,17 +2,27 @@
 <meta charset="utf-8">
 <html>
   <head>
+    
+
+    <!-- Twitter card metadata -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@markegge">
+    <meta name="twitter:title" content="Visualizing Pittsburgh Bus Bunching">
+    <meta name="twitter:description" content="Visualizing Time and Location Patterns of Bus Bunching in Pittsburgh.">
+    <meta name="twitter:creator" content="@markegge">
+    <meta name="twitter:image:src" content="http://bunching.github.io/images/twitter-card-preview.png">
+
     <!-- code for block heat map heavily borrowed from http://bl.ocks.org/tjdecke/5558084 -->
     <style>
 
     </style>
-    <title>Pittsburgh Bus Bunching Visualized</title>
+    <title>Visualizing Pittsburgh's Bus Bunching</title>
     <link rel="stylesheet" href="bunching.css" />
     <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/3.15/themes/css/cartodb.css" />
 
   </head>
   <body> 
-    <h1>Pittsburgh Bus Bunching Visualized</h1>
+    <h1>Visualizing Pittsburgh's Bus Bunching</h1>
     <p>They say bad news comes in threes. Sometimes, too, so do Pittsburgh's buses. In twos and threes, Pittsburgh's bunched buses bear the bad news of crowding (the front bus is often overfull, with subsequent buses nearly empty), waiting (bunching creates long waits between bus arrivals), and underutilization (crowding and waiting reduce public transit ridership).
 
     <p>Does bunching follow predictable patterns? This project presents the geotemporal occurence of bus bunching in Pittsburgh. The intent is to foster better understanding of where and how bunching occurs as a foundation for approaching the questions of "why does bunching occur" and "how do we make this better?"
@@ -60,10 +70,23 @@
 
 
     <footer>
-      Visualization created by <a href="http://www.markegge.com">Mark Egge</a> in completion of coursework requirements for CMU 05-839. 
+      <!-- Social sharing links from FourtonFish -->
+      <ul class="share-buttons">
+        <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fbunching.github.io&t=Visualizing%20Pittsburgh's%20Bus%20Bunching" title="Share on Facebook" target="_blank"><img src="images/simple_icons_black/Facebook.png"></a></li>
+        <li><a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fbunching.github.io&text=Visualizing%20Pittsburgh's%20Bus%20Bunching:%20http%3A%2F%2Fbunching.github.io&via=markegge" target="_blank" title="Tweet"><img src="images/simple_icons_black/Twitter.png"></a></li>
+        <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fbunching.github.io" target="_blank" title="Share on Google+"><img src="images/simple_icons_black/Google+.png"></a></li>
+        <li><a href="https://getpocket.com/save?url=http%3A%2F%2Fbunching.github.io&title=Visualizing%20Pittsburgh's%20Bus%20Bunching" target="_blank" title="Add to Pocket"><img src="images/simple_icons_black/Pocket.png"></a></li>
+        <li><a href="http://www.reddit.com/submit?url=http%3A%2F%2Fbunching.github.io&title=Visualizing%20Pittsburgh's%20Bus%20Bunching" target="_blank" title="Submit to Reddit"><img src="images/simple_icons_black/Reddit.png"></a></li>
+        <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fbunching.github.io&title=Visualizing%20Pittsburgh's%20Bus%20Bunching&summary=Visualizing%20Time%20and%20Location%20Patterns%20of%20Bus%20Bunching%20in%20Pittsburgh&source=http%3A%2F%2Fbunching.github.io" target="_blank" title="Share on LinkedIn"><img src="images/simple_icons_black/LinkedIn.png"></a></li>
+        <li><a href="https://pinboard.in/popup_login/?url=http%3A%2F%2Fbunching.github.io&title=Visualizing%20Pittsburgh's%20Bus%20Bunching&description=Visualizing%20Time%20and%20Location%20Patterns%20of%20Bus%20Bunching%20in%20Pittsburgh" target="_blank" title="Save to Pinboard"><img src="images/simple_icons_black/Pinboard.png"></a></li>
+        <li><a href="mailto:?subject=Visualizing%20Pittsburgh's%20Bus%20Bunching&body=Visualizing%20Time%20and%20Location%20Patterns%20of%20Bus%20Bunching%20in%20Pittsburgh:%20http%3A%2F%2Fbunching.github.io" target="_blank" title="Email"><img src="images/simple_icons_black/Email.png"></a></li>
+      </ul>
+      <p>Visualization created by <a href="http://www.markegge.com">Mark Egge</a> in completion of coursework requirements for CMU 05-839. April 28, 2016.
     </footer>
     <script src="http://d3js.org/d3.v3.js"></script>
-
+    <script type="text/javascript">var switchTo5x=true;</script>
+    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+    <script type="text/javascript">stLight.options({publisher: "270c015c-e043-40b7-9073-349cd0232172", doNotHash: true, doNotCopy: true, hashAddressBar: false});</script>
     <script type="text/javascript">
       // add routes to select dropdown
       var routes = ["61A", "61B", "61C", "61D", "71A", "71B", "71C", "71D", "P1", "G2"];
@@ -256,7 +279,9 @@
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
       ga('create', 'UA-5917749-4', 'auto');
+      ga('require', 'linkid');
       ga('send', 'pageview');
     </script>
   </body>
