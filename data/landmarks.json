@@ -50,7 +50,7 @@
   {
     "route": "61A",
     "rtdir": "OUTBOUND",
-    "HOOD": "Bluff",
+    "HOOD": "Uptown",
     "first_occ": 2
   },
   {
@@ -147,7 +147,7 @@
   {
     "route": "61B",
     "rtdir": "OUTBOUND",
-    "HOOD": "Bluff",
+    "HOOD": "Uptown",
     "first_occ": 2
   },
   {
@@ -237,7 +237,7 @@
   {
     "route": "61C",
     "rtdir": "OUTBOUND",
-    "HOOD": "Bluff",
+    "HOOD": "Uptown",
     "first_occ": 2
   },
   {
@@ -435,7 +435,7 @@
   {
     "route": "71A",
     "rtdir": "OUTBOUND",
-    "HOOD": "Bluff",
+    "HOOD": "Uptown",
     "first_occ": 2
   },
   {
@@ -513,7 +513,7 @@
   {
     "route": "71B",
     "rtdir": "OUTBOUND",
-    "HOOD": "Bluff",
+    "HOOD": "Uptown",
     "first_occ": 2
   },
   {
@@ -615,7 +615,7 @@
   {
     "route": "71C",
     "rtdir": "OUTBOUND",
-    "HOOD": "Bluff",
+    "HOOD": "Uptown",
     "first_occ": 2
   },
   {
@@ -723,7 +723,7 @@
   {
     "route": "71D",
     "rtdir": "OUTBOUND",
-    "HOOD": "Bluff",
+    "HOOD": "Uptown",
     "first_occ": 2
   },
   {

@@ -20,7 +20,8 @@ body > p, li > p {
 
 aside {
   float: left;
-  margin-right: .5em;
+  margin-right: 1em;
+  margin-top: 34px;
   font-size: small;
   right: 0;
   position: absolute;
@@ -37,11 +38,14 @@ header, footer {
 
 svg {
   font: 10px sans-serif;
-  min-height: 430px;
 }
 
 footer {
   margin-top: 40px;
+}
+
+#chart {
+  min-height: 400px;
 }
 
 #map {

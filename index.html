@@ -23,34 +23,33 @@
   </head>
   <body> 
     <h1>Visualizing Pittsburgh's Bus Bunching</h1>
-    <p>They say bad news comes in threes. Sometimes, too, so do Pittsburgh's buses. In twos and threes, Pittsburgh's bunched buses bear the bad news of crowding (the front bus is often overfull, with subsequent buses nearly empty), waiting (bunching creates long waits between bus arrivals), and underutilization (crowding and waiting reduce public transit ridership).
+    <p>They say bad news comes in threes. Sometimes, too, so do Pittsburgh's buses. In twos and threes, Pittsburgh's bunched buses bear the bad news of crowding (the front bus is often overfull, with subsequent buses nearly empty), waiting (bunching creates long waits between bus arrivals), and underutilization (crowding and waiting reduce public transit ridership). Bunching bedevils public transit planners in Pittsburgh and in cities across the globe.
 
-    <p>Does bunching follow predictable patterns? This project presents the geotemporal occurence of bus bunching in Pittsburgh. The intent is to foster better understanding of where and how bunching occurs as a foundation for approaching the questions of "why does bunching occur" and "how do we make this better?"
+    <p>Does bunching follow predictable patterns? This project presents the geotemporal occurrence of bus bunching in Pittsburgh for selected routes in March 2016. The intent is to foster better understanding of where and how bunching occurs as a foundation for approaching the questions of "why does bunching occur" and "how do we make this better?"
 
-    <p>The chart below shows bunching in time and space for Pittsburgh <a href="http://www.portauthority.org/" target="_blank">PAAC</a> routes 61, 71, P1 and G2. The data is derived from vehicle location information collected for the month of March 1 - 31, 2016 (<a href="https://suds-cmu.org/2016/02/05/do-pittsburghs-buses-bunch/" target="_blank">data collection details</a>). Buses were characterizes as "bunched" if observed to be operating within 250m of another bus servicing the same line in the same direction.
+    <p>The chart below shows bunching in time and space for Pittsburgh <a href="http://www.portauthority.org/" target="_blank">PAAC</a> routes 61, 71, P1 and G2. The data is derived from vehicle location information collected for the month of March 1 - 27, 2016 (<a href="https://suds-cmu.org/2016/02/05/do-pittsburghs-buses-bunch/" target="_blank">data collection details</a>). Buses location observations are defined as "bunched" if observed to be operating within 250m of another bus servicing the same line in the same direction.
     
-    <aside style="margin-top:38px;">
+    <aside>
       <h2>Bunching Frequency</h2>
       <p>
-        Route: <select id="rt">
-
-      </select><br />
-      Direction:<br /><input type="radio" name="dir" id="dir" value="1" checked>Outbound
-      <input type="radio" name="dir" id="dir" value="0">Inbound<br />
-      Time Basis:<br />
-      <input type="radio" name="tm" id="tm" value="1" checked>Trip Start
-      <input type="radio" name="tm" id="tm" value="0">Actual Time
+        Route: <select id="rt"></select><br />
+        Direction:<br />
+          <input type="radio" name="dir" id="dir" value="1" checked>Outbound
+          <input type="radio" name="dir" id="dir" value="0">Inbound<br />
+        Time Basis:<br />
+          <input type="radio" name="tm" id="tm" value="1" checked>Trip Start
+          <input type="radio" name="tm" id="tm" value="0">Actual Time
   
-      <p><i>Trip Start</i> data is grouped by the trip's departure time. <i>Actual Time</i> shows bus location at the moment of observation. 
+      <p><i>Trip Start</i> data is displayed by trip's departure time. <i>Actual Time</i> shows bus location at the moment of observation. 
 
-      <p>The color of each cell represents the portion of observations for which observed buses were bunched (pure <span style="color: red">red</span> = > 80%)
+      <p>The color of each cell represents the portion of observations which are bunched (pure <span style="color: red">red</span> = > 80%)
 
-      <p>(Data: Bus Trips Mar 1 - 31, 2016)
+      <p>(Data: Bus Trips Mar 1 - 27, 2016)
     </aside>
     
     <div id="chart"></div>
     
-    <p>The chart shows the frequency of bunching occurances for buses travelling along their service routes. The data may be viewed based on the departure time of the bus's run (trip start), or based on the bus's location when the observation was captured (actual time). 
+    <p>The chart shows the frequency of bunching occurrences for buses travelling along their service routes. The data may be viewed based on the departure time of the bus's run (trip start), or based on the bus's location when the observation was captured (actual time). 
     
     <p>White vertical lines for <i>Trip Start</i> data indicate that no trips departed during the time window, corresponding with published schedules. The obvious red vertical lines indicate the recurrence of bunching for routes at certain departure times, and that bunching tends to persist throughout the duration of the route. Comparing these lines against the <i>Actual Time</i> patterns, the trip lines shift horizontally with time.
 
@@ -60,11 +59,11 @@
 
     <h2>Timelapse Heatmap (or, All Together, Now)</h2>
     
-    <p>To see this all in motion, click the "play" button below to see a time lapse of the occurances of bunching.
+    <p>To see this all in motion, click the "play" button below to see a time lapse of the occurrences of bunching.
 
     <div id="map"></div>
 
-    <p>Data for March 1 - 31, 2016 are combined and presented in a single 18-hour (6:00 am to midnight) time lapse based on the corresponding periods of each day. The heat map shows instances in which buses were observed to be bunched. Since more buses are in operation during rush hour, everything else being equal we would expect to observe more bunching during rush hour (simply by virtue of there being more buses which could bunch). 
+    <p>Data for March 1 - 27, 2016 are combined and presented in a single 18-hour (6:00 am to midnight) time lapse based on the corresponding periods of each day. The heatmap shows spatial frequency of bunching. Since more buses are in operation during rush hour, everything else being equal one would expect to observe more bunching during rush hour (simply by virtue of there being more buses which could bunch).
     
     <p>The timelapse heatmap shows that downtown, Oakland, and the intersection of Murray and Forbes in Squirrel Hill are persistent hot spots for bunching. The movement of bunches through time illustrate that bunching typically snowballs and persists. As above, routes P1 and G2 show comparatively very little bunching.
 
@@ -83,10 +82,9 @@
       </ul>
       <p>Visualization created by <a href="http://www.markegge.com">Mark Egge</a> in completion of coursework requirements for CMU 05-839. April 28, 2016.
     </footer>
+
     <script src="http://d3js.org/d3.v3.js"></script>
-    <script type="text/javascript">var switchTo5x=true;</script>
-    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
-    <script type="text/javascript">stLight.options({publisher: "270c015c-e043-40b7-9073-349cd0232172", doNotHash: true, doNotCopy: true, hashAddressBar: false});</script>
+    
     <script type="text/javascript">
       // add routes to select dropdown
       var routes = ["61A", "61B", "61C", "61D", "71A", "71B", "71C", "71D", "P1", "G2"];
@@ -116,7 +114,7 @@
       var svg = d3.select("#chart").append("svg")
           .attr("width", width + margin.left + margin.right)
           .attr("height", height + margin.top + margin.bottom)
-          //.style("margin-left", -margin.left + "px")         
+          //.style("margin-left", -margin.left + "px")
         .append("g")
           .attr("transform", "translate(" + margin.left + "," + margin.top + ")");  
 
@@ -247,22 +245,7 @@
     <script src="http://libs.cartocdn.com/cartodb.js/v3/3.15/cartodb.js"></script>
 
     <script>
-      // Use D3's hand JSON convenience function to load our local copy of our map settings
-
-      /*var mapSetting;
-      d3.json("map.json", function(response) {
-        mapSettings = response;
-        cartodb.createVis('map', mapSettings)
-            .done(function(vis, layers) {
-              //First layer is the basemap, the second is the Torque layer
-              torqueLayer = layers[2];
-              torqueLayer.pause();
-            })
-            .error(function(err) {
-              console.log(err);
-            });
-      });*/
-    cartodb.createVis('map', "https://markegge.cartodb.com/api/v2/viz/ad750b84-fddb-11e5-918e-0ea31932ec1d/viz.json")
+      cartodb.createVis('map', "https://markegge.cartodb.com/api/v2/viz/ad750b84-fddb-11e5-918e-0ea31932ec1d/viz.json")
         .done(function(vis, layers) {
           //First layer is the basemap, the second is the Torque layer
           torqueLayer = layers[2];
