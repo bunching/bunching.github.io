@@ -2,8 +2,20 @@
   {
     "route": "61A",
     "rtdir": "INBOUND",
-    "HOOD": "Regional Service",
+    "HOOD": "Swissvale",
     "first_occ": 0
+  },
+  {
+    "route": "61A",
+    "rtdir": "INBOUND",
+    "HOOD": "Edgewood",
+    "first_occ": 6
+  },
+  {
+    "route": "61A",
+    "rtdir": "INBOUND",
+    "HOOD": "Wilkinsburg",
+    "first_occ": 9
   },
   {
     "route": "61A",
@@ -14,20 +26,14 @@
   {
     "route": "61A",
     "rtdir": "INBOUND",
-    "HOOD": "Sq. Hill North",
+    "HOOD": "N Squirrel Hill",
     "first_occ": 22
   },
   {
     "route": "61A",
     "rtdir": "INBOUND",
-    "HOOD": "North Oakland",
+    "HOOD": "Oakland",
     "first_occ": 33
-  },
-  {
-    "route": "61A",
-    "rtdir": "INBOUND",
-    "HOOD": "West Oakland",
-    "first_occ": 37
   },
   {
     "route": "61A",
@@ -59,72 +65,95 @@
     "HOOD": "Oakland",
     "first_occ": 11
   },
-
   {
     "route": "61A",
     "rtdir": "OUTBOUND",
-    "HOOD": "Sq. Hill North",
+    "HOOD": "N Squirrel Hill",
     "first_occ": 16
   },
   {
     "route": "61A",
     "rtdir": "OUTBOUND",
-    "HOOD": "Sq. Hill South",
+    "HOOD": "S Squirrel Hill",
     "first_occ": 21
   },
   {
     "route": "61A",
     "rtdir": "OUTBOUND",
     "HOOD": "Regent Square",
-    "first_occ": 29
+    "first_occ": 30
   },
   {
     "route": "61A",
     "rtdir": "OUTBOUND",
     "HOOD": "Point Breeze",
-    "first_occ": 31
+    "first_occ": 32
   },
   {
     "route": "61A",
     "rtdir": "OUTBOUND",
-    "HOOD": "Regional Service",
-    "first_occ": 33
+    "HOOD": "Wilkinsburg",
+    "first_occ": 34
+  },
+  {
+    "route": "61A",
+    "rtdir": "OUTBOUND",
+    "HOOD": "Edgewood",
+    "first_occ": 41
+  },
+  {
+    "route": "61A",
+    "rtdir": "OUTBOUND",
+    "HOOD": "Swissvale",
+    "first_occ": 45
   },
   {
     "route": "61B",
     "rtdir": "INBOUND",
-    "HOOD": "Regional Service",
-    "first_occ": 0
+    "HOOD": "Rankin",
+    "first_occ": 12
+  },
+  {
+    "route": "61B",
+    "rtdir": "INBOUND",
+    "HOOD": "Swissvale",
+    "first_occ": 17
+  },
+  {
+    "route": "61B",
+    "rtdir": "INBOUND",
+    "HOOD": "Edgewood",
+    "first_occ": 22
+  },
+  {
+    "route": "61B",
+    "rtdir": "INBOUND",
+    "HOOD": "Wilkinsburg",
+    "first_occ": 24
   },
   {
     "route": "61B",
     "rtdir": "INBOUND",
     "HOOD": "Regent Square",
-    "first_occ": 25
+    "first_occ": 26
   },
   {
     "route": "61B",
     "rtdir": "INBOUND",
     "HOOD": "Point Breeze",
-    "first_occ": 27
+    "first_occ": 28
   },
   {
     "route": "61B",
     "rtdir": "INBOUND",
-    "HOOD": "Sq. Hill North",
+    "HOOD": "N Squirrel Hill",
     "first_occ": 31
   },
   {
     "route": "61B",
     "rtdir": "INBOUND",
-    "HOOD": "North Oakland",
+    "HOOD": "Oakland",
     "first_occ": 42
-  },
-  {
-    "route": "61B",
-    "rtdir": "INBOUND",
-    "HOOD": "West Oakland",
-    "first_occ": 46
   },
   {
     "route": "61B",
@@ -159,13 +188,13 @@
   {
     "route": "61B",
     "rtdir": "OUTBOUND",
-    "HOOD": "Sq. Hill North",
+    "HOOD": "N Squirrel Hill",
     "first_occ": 16
   },
   {
     "route": "61B",
     "rtdir": "OUTBOUND",
-    "HOOD": "Sq. Hill South",
+    "HOOD": "S Squirrel Hill",
     "first_occ": 21
   },
   {
@@ -177,19 +206,67 @@
   {
     "route": "61B",
     "rtdir": "OUTBOUND",
-    "HOOD": "Regional Service",
+    "HOOD": "Swissvale",
     "first_occ": 33
+  },
+  {
+    "route": "61B",
+    "rtdir": "OUTBOUND",
+    "HOOD": "Edgewood",
+    "first_occ": 35
+  },
+  {
+    "route": "61B",
+    "rtdir": "OUTBOUND",
+    "HOOD": "Rankin",
+    "first_occ": 40
+  },
+  {
+    "route": "61B",
+    "rtdir": "OUTBOUND",
+    "HOOD": "Braddock",
+    "first_occ": 45
   },
   {
     "route": "61C",
     "rtdir": "INBOUND",
-    "HOOD": "Regional Service",
+    "HOOD": "McKeesport",
     "first_occ": 0
   },
   {
     "route": "61C",
     "rtdir": "INBOUND",
-    "HOOD": "Sq. Hill South",
+    "HOOD": "Duquesne",
+    "first_occ": 10
+  },
+  {
+    "route": "61C",
+    "rtdir": "INBOUND",
+    "HOOD": "West Mifflin",
+    "first_occ": 22
+  },
+  {
+    "route": "61C",
+    "rtdir": "INBOUND",
+    "HOOD": "Whitaker",
+    "first_occ": 30
+  },
+  {
+    "route": "61C",
+    "rtdir": "INBOUND",
+    "HOOD": "Munhall",
+    "first_occ": 33
+  },
+  {
+    "route": "61C",
+    "rtdir": "INBOUND",
+    "HOOD": "Homestead",
+    "first_occ": 37
+  },
+  {
+    "route": "61C",
+    "rtdir": "INBOUND",
+    "HOOD": "S Squirrel Hill",
     "first_occ": 43
   },
   {
@@ -201,20 +278,14 @@
   {
     "route": "61C",
     "rtdir": "INBOUND",
-    "HOOD": "Sq. Hill North",
+    "HOOD": "N Squirrel Hill",
     "first_occ": 53
   },
   {
     "route": "61C",
     "rtdir": "INBOUND",
-    "HOOD": "North Oakland",
+    "HOOD": "Oakland",
     "first_occ": 62
-  },
-  {
-    "route": "61C",
-    "rtdir": "INBOUND",
-    "HOOD": "West Oakland",
-    "first_occ": 66
   },
   {
     "route": "61C",
@@ -249,13 +320,13 @@
   {
     "route": "61C",
     "rtdir": "OUTBOUND",
-    "HOOD": "Sq. Hill North",
+    "HOOD": "N Squirrel Hill",
     "first_occ": 16
   },
   {
     "route": "61C",
     "rtdir": "OUTBOUND",
-    "HOOD": "Sq. Hill South",
+    "HOOD": "S Squirrel Hill",
     "first_occ": 21
   },
   {
@@ -273,19 +344,49 @@
   {
     "route": "61C",
     "rtdir": "OUTBOUND",
-    "HOOD": "Regional Service",
+    "HOOD": "Homestead",
     "first_occ": 38
+  },
+  {
+    "route": "61C",
+    "rtdir": "OUTBOUND",
+    "HOOD": "Munhall",
+    "first_occ": 40
+  },
+  {
+    "route": "61C",
+    "rtdir": "OUTBOUND",
+    "HOOD": "Whitaker",
+    "first_occ": 45
+  },
+  {
+    "route": "61C",
+    "rtdir": "OUTBOUND",
+    "HOOD": "West Mifflin",
+    "first_occ": 52
+  },
+  {
+    "route": "61C",
+    "rtdir": "OUTBOUND",
+    "HOOD": "Duquesne",
+    "first_occ": 56
+  },
+  {
+    "route": "61C",
+    "rtdir": "OUTBOUND",
+    "HOOD": "McKeesport",
+    "first_occ": 69
   },
   {
     "route": "61D",
     "rtdir": "INBOUND",
-    "HOOD": "Regional Service",
+    "HOOD": "Homestead",
     "first_occ": 0
   },
   {
     "route": "61D",
     "rtdir": "INBOUND",
-    "HOOD": "Sq. Hill South",
+    "HOOD": "S Squirrel Hill",
     "first_occ": 17
   },
   {
@@ -297,20 +398,14 @@
   {
     "route": "61D",
     "rtdir": "INBOUND",
-    "HOOD": "Sq. Hill North",
+    "HOOD": "N Squirrel Hill",
     "first_occ": 27
   },
   {
     "route": "61D",
     "rtdir": "INBOUND",
-    "HOOD": "North Oakland",
+    "HOOD": "Oakland",
     "first_occ": 35
-  },
-  {
-    "route": "61D",
-    "rtdir": "INBOUND",
-    "HOOD": "West Oakland",
-    "first_occ": 39
   },
   {
     "route": "61D",
@@ -327,32 +422,14 @@
   {
     "route": "61D",
     "rtdir": "OUTBOUND",
-    "HOOD": "Central Oakland",
-    "first_occ": 0
-  },
-  {
-    "route": "61D",
-    "rtdir": "OUTBOUND",
     "HOOD": "Downtown",
     "first_occ": 0
   },
   {
     "route": "61D",
     "rtdir": "OUTBOUND",
-    "HOOD": "North Oakland",
+    "HOOD": "Uptown",
     "first_occ": 2
-  },
-  {
-    "route": "61D",
-    "rtdir": "OUTBOUND",
-    "HOOD": "Sq. Hill North",
-    "first_occ": 4
-  },
-  {
-    "route": "61D",
-    "rtdir": "OUTBOUND",
-    "HOOD": "Sq. Hill South",
-    "first_occ": 8
   },
   {
     "route": "61D",
@@ -363,8 +440,20 @@
   {
     "route": "61D",
     "rtdir": "OUTBOUND",
+    "HOOD": "N Squirrel Hill",
+    "first_occ": 16
+  },
+  {
+    "route": "61D",
+    "rtdir": "OUTBOUND",
+    "HOOD": "S Squirrel Hill",
+    "first_occ": 21
+  },
+  {
+    "route": "61D",
+    "rtdir": "OUTBOUND",
     "HOOD": "Greenfield",
-    "first_occ": 15
+    "first_occ": 28
   },
   {
     "route": "61D",
@@ -375,8 +464,14 @@
   {
     "route": "61D",
     "rtdir": "OUTBOUND",
-    "HOOD": "Regional Service",
+    "HOOD": "Homestead",
     "first_occ": 39
+  },
+  {
+    "route": "61D",
+    "rtdir": "OUTBOUND",
+    "HOOD": "Munhall",
+    "first_occ": 47
   },
   {
     "route": "71A",
@@ -388,7 +483,13 @@
     "route": "71A",
     "rtdir": "INBOUND",
     "HOOD": "East Liberty",
-    "first_occ": 4
+    "first_occ": 3
+  },
+  {
+    "route": "71A",
+    "rtdir": "INBOUND",
+    "HOOD": "Garfield",
+    "first_occ": 5
   },
   {
     "route": "71A",
@@ -405,14 +506,8 @@
   {
     "route": "71A",
     "rtdir": "INBOUND",
-    "HOOD": "North Oakland",
+    "HOOD": "Oakland",
     "first_occ": 14
-  },
-  {
-    "route": "71A",
-    "rtdir": "INBOUND",
-    "HOOD": "West Oakland",
-    "first_occ": 20
   },
   {
     "route": "71A",
@@ -483,14 +578,8 @@
   {
     "route": "71B",
     "rtdir": "INBOUND",
-    "HOOD": "North Oakland",
+    "HOOD": "Oakland",
     "first_occ": 17
-  },
-  {
-    "route": "71B",
-    "rtdir": "INBOUND",
-    "HOOD": "West Oakland",
-    "first_occ": 21
   },
   {
     "route": "71B",
@@ -525,7 +614,7 @@
   {
     "route": "71B",
     "rtdir": "OUTBOUND",
-    "HOOD": "Sq. Hill North",
+    "HOOD": "N Squirrel Hill",
     "first_occ": 17
   },
   {
@@ -549,13 +638,13 @@
   {
     "route": "71C",
     "rtdir": "INBOUND",
-    "HOOD": "Regional Service",
+    "HOOD": "Wilkinsburg",
     "first_occ": 0
   },
   {
     "route": "71C",
     "rtdir": "INBOUND",
-    "HOOD": "Pt. Breeze North",
+    "HOOD": "Point Breeze",
     "first_occ": 8
   },
   {
@@ -585,14 +674,8 @@
   {
     "route": "71C",
     "rtdir": "INBOUND",
-    "HOOD": "North Oakland",
+    "HOOD": "Oakland",
     "first_occ": 27
-  },
-  {
-    "route": "71C",
-    "rtdir": "INBOUND",
-    "HOOD": "West Oakland",
-    "first_occ": 33
   },
   {
     "route": "71C",
@@ -651,32 +734,26 @@
   {
     "route": "71C",
     "rtdir": "OUTBOUND",
-    "HOOD": "Regional Service",
+    "HOOD": "Wilkinsburg",
     "first_occ": 39
   },
   {
     "route": "71D",
     "rtdir": "INBOUND",
-    "HOOD": "Regional Service",
+    "HOOD": "Wilkinsburg",
     "first_occ": 0
   },
   {
     "route": "71D",
     "rtdir": "INBOUND",
     "HOOD": "East Hills",
-    "first_occ": 6
+    "first_occ": 5
   },
   {
     "route": "71D",
     "rtdir": "INBOUND",
-    "HOOD": "Homewood South",
-    "first_occ": 8
-  },
-  {
-    "route": "71D",
-    "rtdir": "INBOUND",
-    "HOOD": "Homewood West",
-    "first_occ": 12
+    "HOOD": "Homewood",
+    "first_occ": 7
   },
   {
     "route": "71D",
@@ -693,20 +770,14 @@
   {
     "route": "71D",
     "rtdir": "INBOUND",
-    "HOOD": "North Oakland",
+    "HOOD": "Oakland",
     "first_occ": 26
   },
   {
     "route": "71D",
     "rtdir": "INBOUND",
-    "HOOD": "West Oakland",
-    "first_occ": 30
-  },
-  {
-    "route": "71D",
-    "rtdir": "INBOUND",
     "HOOD": "Hill District",
-    "first_occ": 37
+    "first_occ": 36
   },
   {
     "route": "71D",
@@ -735,7 +806,7 @@
   {
     "route": "71D",
     "rtdir": "OUTBOUND",
-    "HOOD": "Sq. Hill North",
+    "HOOD": "N Squirrel Hill",
     "first_occ": 17
   },
   {
@@ -747,25 +818,19 @@
   {
     "route": "71D",
     "rtdir": "OUTBOUND",
-    "HOOD": "Homewood West",
+    "HOOD": "Homewood",
     "first_occ": 28
   },
   {
     "route": "71D",
     "rtdir": "OUTBOUND",
-    "HOOD": "Homewood South",
-    "first_occ": 31
-  },
-  {
-    "route": "71D",
-    "rtdir": "OUTBOUND",
-    "HOOD": "Regional Service",
+    "HOOD": "Wilkinsburg",
     "first_occ": 37
   },
   {
     "route": "G2",
     "rtdir": "INBOUND",
-    "HOOD": "Regional Service",
+    "HOOD": "Carnegie",
     "first_occ": 0
   },
   {
@@ -773,6 +838,18 @@
     "rtdir": "INBOUND",
     "HOOD": "Oakwood",
     "first_occ": 9
+  },
+  {
+    "route": "G2",
+    "rtdir": "INBOUND",
+    "HOOD": "Crafton",
+    "first_occ": 13
+  },
+  {
+    "route": "G2",
+    "rtdir": "INBOUND",
+    "HOOD": "Ingram",
+    "first_occ": 16
   },
   {
     "route": "G2",
@@ -813,8 +890,14 @@
   {
     "route": "G2",
     "rtdir": "OUTBOUND",
-    "HOOD": "Regional Service",
+    "HOOD": "Ingram",
     "first_occ": 26
+  },
+  {
+    "route": "G2",
+    "rtdir": "OUTBOUND",
+    "HOOD": "Crafton",
+    "first_occ": 29
   },
   {
     "route": "G2",
@@ -823,34 +906,46 @@
     "first_occ": 32
   },
   {
+    "route": "G2",
+    "rtdir": "OUTBOUND",
+    "HOOD": "Carnegie",
+    "first_occ": 37
+  },
+  {
     "route": "P1",
     "rtdir": "INBOUND",
-    "HOOD": "Regional Service",
+    "HOOD": "Swissvale",
     "first_occ": 0
   },
   {
     "route": "P1",
     "rtdir": "INBOUND",
-    "HOOD": "Shadyside",
-    "first_occ": 3
+    "HOOD": "Wilkinsburg",
+    "first_occ": 9
   },
   {
     "route": "P1",
     "rtdir": "INBOUND",
-    "HOOD": "Homewood South",
-    "first_occ": 17
+    "HOOD": "Homewood",
+    "first_occ": 15
+  },
+  {
+    "route": "P1",
+    "rtdir": "INBOUND",
+    "HOOD": "Shadyside",
+    "first_occ": 25
   },
   {
     "route": "P1",
     "rtdir": "INBOUND",
     "HOOD": "Polish Hill",
-    "first_occ": 17
+    "first_occ": 35
   },
   {
     "route": "P1",
     "rtdir": "INBOUND",
     "HOOD": "Downtown",
-    "first_occ": 25
+    "first_occ": 44
   },
   {
     "route": "P1",
@@ -873,13 +968,19 @@
   {
     "route": "P1",
     "rtdir": "OUTBOUND",
-    "HOOD": "Homewood South",
+    "HOOD": "Homewood",
     "first_occ": 32
   },
   {
     "route": "P1",
     "rtdir": "OUTBOUND",
-    "HOOD": "Regional Service",
+    "HOOD": "Wilkinsburg",
     "first_occ": 36
+  },
+  {
+    "route": "P1",
+    "rtdir": "OUTBOUND",
+    "HOOD": "Swissvale",
+    "first_occ": 46
   }
 ]

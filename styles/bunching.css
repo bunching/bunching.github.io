@@ -45,12 +45,11 @@ footer {
 }
 
 #chart {
-  min-height: 400px;
+  min-height: 300px;
 }
 
 #map {
-  width: 880;
-  height: 600px;
+  height: 560px;
   margin-left: 40px;
   margin-right: 40px;
 } 
