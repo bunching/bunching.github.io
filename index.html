@@ -22,10 +22,6 @@
     <meta name="twitter:creator" content="@markegge">
     <meta name="twitter:image:src" content="http://bunching.github.io/images/twitter-card-preview.png">
 
-    <!-- code for block heat map heavily borrowed from http://bl.ocks.org/tjdecke/5558084 -->
-    <style>
-
-    </style>
     <title>Pittsburgh Bus Bunching</title>
     <link rel="stylesheet" href="styles/bunching.css" />
     <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/3.15/themes/css/cartodb.css" />
@@ -60,13 +56,13 @@
     
     <p>The chart shows the frequency of bunching occurrences for buses travelling along their service routes. The data may be viewed based on the departure time of the bus's run (trip start), or based on the bus's location when the observation was captured (actual time). 
     
-    <p>White vertical lines <!-- for <i>Trip Start</i> data --> indicate that no trips departed during the time window, corresponding with published schedules. The obvious red vertical lines indicate the recurrence of bunching for routes at certain departure times, and that bunching tends to persist throughout the duration of the route. <!-- Comparing these lines against the <i>Actual Time</i> patterns, the trip lines shift horizontally with time. -->
+    <p>White vertical lines indicate that no trips departed during the time window, corresponding with published schedules. The obvious red vertical lines indicate the recurrence of bunching for routes at certain departure times, and that bunching tends to persist throughout the duration of the route. 
 
     <p>One possible hypothesis is that bunching is caused by heavy ridership during rush hour (inbound between 7:00 and 10:00 am, and outbound between 4:00 and 6:00 pm). The data does not seem to support this hypothesis. Location seems far more deterministic of bunching than time.
 
     <p>Routes <strong>P1</strong> and <strong>G2</strong> operate along dedicated busways. Comparing the frequency of bunching for these routes to 61 or 71 routes operating in traffic reveals dramatically less bunching on the busways.
 
-    <h2>Timelapse Heatmap (or, All Together, Now)</h2>
+    <h2>Bunching Timelapse Heatmap</h2>
     
     <p>To see this all in motion, click the "play" button below to see a time lapse of the occurrences of bunching.
 
@@ -89,7 +85,7 @@
         <li><a href="https://pinboard.in/popup_login/?url=http%3A%2F%2Fbunching.github.io&title=Visualizing%20Pittsburgh's%20Bus%20Bunching&description=Visualizing%20Time%20and%20Location%20Patterns%20of%20Bus%20Bunching%20in%20Pittsburgh" target="_blank" title="Save to Pinboard"><img src="images/simple_icons_black/Pinboard.png"></a></li>
         <li><a href="mailto:?subject=Visualizing%20Pittsburgh's%20Bus%20Bunching&body=Visualizing%20Time%20and%20Location%20Patterns%20of%20Bus%20Bunching%20in%20Pittsburgh:%20http%3A%2F%2Fbunching.github.io" target="_blank" title="Email"><img src="images/simple_icons_black/Email.png"></a></li>
       </ul>
-      <p>Visualization created by <a href="http://www.markegge.com">Mark Egge</a> in completion of coursework requirements for CMU 05-839. April 28, 2016. Code on GitHub: <a href="https://github.com/markegge/bunching" target="_BLANK">Data Processing</a>, <a href="https://github.com/bunching/bunching.github.io" target="_BLANK">Visualization</a>
+      <p>Visualization created by <a href="http://www.markegge.com">Mark Egge</a>. April 28, 2016. Code on GitHub: <a href="https://github.com/markegge/bunching" target="_BLANK">Data Processing</a>, <a href="https://github.com/bunching/bunching.github.io" target="_BLANK">Visualization</a>
     </footer>
 
     <script src="http://d3js.org/d3.v3.js"></script>
