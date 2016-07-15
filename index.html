@@ -24,54 +24,53 @@
 
     <title>Pittsburgh Bus Bunching</title>
     <link rel="stylesheet" href="styles/bunching.css" />
-    <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/3.15/themes/css/cartodb.css" />
+    <link rel="stylesheet" href="styles/cartodb.css" />
 
   </head>
   <body> 
-    <h1>Visualizing Pittsburgh's Bus Bunching</h1>
-    <p>They say bad news comes in threes. Sometimes, too, so do Pittsburgh's buses. In twos and threes, Pittsburgh's bunched buses bear the bad news of crowding (the front bus is often overfull, with subsequent buses nearly empty), waiting (bunching creates long waits between bus arrivals), and underutilization (crowding and waiting reduce public transit ridership). Bunching bedevils public transit planners not just in Pittsburgh but in cities the world over.
+    <h1>Pittsburgh's Bus Bunching Bad News Bears</h1>
+    <p>They say bad news comes in threes. Sometimes, too, do Pittsburgh's buses. In twos and threes, Pittsburgh's bunched buses bear the bad news of crowding (the front bus is often overfull, with subsequent buses nearly empty), excess waiting (bunching creates long waits between bus arrivals), and underutilization (crowding and unpredictable arrivals reduce public transit use). Caused by the cascading effect of variance in passenger arrivals, bunching bedevils public transit planners not just in Pittsburgh but in cities around the globe.
 
-    <p>Does bunching follow predictable patterns? This project presents the geotemporal occurrence of bus bunching in Pittsburgh for selected routes in March 2016. The intent is to foster better understanding of where and when bunching occurs as a foundation for approaching the questions of "why does bunching occur" and "how do we make this better?"
+    <p>Does bunching follow predictable patterns? This project presents the geotemporal occurrence of bus bunching in Pittsburgh for <a href="http://www.portauthority.org/paac/SchedulesMaps/Maps.aspx" target="_blank">PAAC</a> routes 61, 71, P1 and G2 during March 2016. The goal is better understanding of where and when bunching occurs, to be used as a foundation for approaching the natural follow-on question: "how do we make this better?"
 
-    <p>The chart below shows bunching in time and space for Pittsburgh <a href="http://www.portauthority.org/" target="_blank">PAAC</a> routes 61, 71, P1 and G2. The data is derived from vehicle location information collected for the month of March 1 - 27, 2016 (<a href="https://suds-cmu.org/2016/02/05/do-pittsburghs-buses-bunch/" target="_blank">data collection details</a>). Observations are defined as "bunched" if observed to be operating within 250m of another bus servicing the same line in the same direction.
+    <p>The chart below shows when and where along a bus's route bunching tends to occur. The data is derived from vehicle location information collected for the month of March 1 - 27, 2016 (<a href="https://suds-cmu.org/2016/02/05/do-pittsburghs-buses-bunch/" target="_blank">data collection details</a>). Observations are defined as "bunched" if observed to be operating within 250m of another bus servicing the same line in the same direction.
     
     <aside>
       <h2>Bunching Frequency</h2>
       <p>
         Route: <select id="rt"></select><br />
         Direction:<br />
-          <input type="radio" name="dir" id="dir" value="1" checked>Outbound
-          <input type="radio" name="dir" id="dir" value="0">Inbound<br />
+          <input type="radio" name="dir" id="outbound" value="outbound" checked>Outbound
+          <input type="radio" name="dir" id="inbound" value="inbound">Inbound<br />      
+      <p>Each row corresponds to 1000 feet of distance travelled along the bus's route. Neighborhood boundaries are labelled.</p>
 
-      <p>Each row corresponds to 1000 feet of distance travelled along the bus's route. Neighborhood boundaries are labelled.
-
-      <p>The color of each cell represents the portion of observations which are bunched (pure <span style="color: red">red</span> = > 80%)
-
-      <p>
+      <span style="margin: 2px 4px 2px auto; font-size: 11px; font-weight: bold">Rare</span><span style="background: -moz-linear-gradient(left, #fff 0%, #ff0000 100%); background: -webkit-linear-gradient(left, #fff 0%,#ff0000 100%); background: linear-gradient(to right, #fff 0%,#ff0000 100%); width: 70px; height: 8px; display: inline-block"></span><span style="margin: 2px auto 2px 4px; font-size: 11px; font-weight: bold;">Frequent</span>
+      <p style=clear: both">The color of each cell represents the portion of observations which are bunched (pure <span style="color: red">red</span> = > 80%)
 
       <p>(Data: Bus Trips Mar 1 - 27, 2016)
     </aside>
     
     <div id="chart"></div>
     
-    <p>The chart shows the frequency of bunching occurrences for buses travelling along their service routes. The data may be viewed based on the departure time of the bus's run (trip start), or based on the bus's location when the observation was captured (actual time). 
+    <p>The chart shows the frequency of bunching occurrences for buses travelling along their service routes. Compare the bunching frequency of on-street routes such as <a class="ui-link" href="javascript:updateChart('61B')">61B</a> or <a class="ui-link" href="javascript:updateChart('71C')">71C</a> to dedicated busway routes <a class="ui-link" href="javascript:updateChart('P1', 'outbound')">P1</a> or <a class="ui-link" href="javascript:updateChart('G2')">G2</a>.
     
-    <p>White vertical lines indicate that no trips departed during the time window, corresponding with published schedules. The obvious red vertical lines indicate the recurrence of bunching for routes at certain departure times, and that bunching tends to persist throughout the duration of the route. 
+    <p>White vertical lines indicate that no trips departed during the time window, corresponding with published schedules. Red vertical lines indicate the recurrence of bunching for routes at certain departure times, and that bunching tends to persist throughout the duration of the route. Horizontal lines show patterns in where bunching occurs.
 
-    <p>One possible hypothesis is that bunching is caused by heavy ridership during rush hour (inbound between 7:00 and 10:00 am, and outbound between 4:00 and 6:00 pm). The data does not seem to support this hypothesis. Location seems far more deterministic of bunching than time.
+    <p>One possible hypothesis is that bunching is caused by heavy ridership during rush hour (inbound between 7:00 and 10:00 am, and outbound between 4:00 and 6:00 pm). Contrary to what one might expect, the data suggests that location (horizontal bands) is more deterministic of bunching than time of day (vertical bands).
 
-    <p>Routes <strong>P1</strong> and <strong>G2</strong> operate along dedicated busways. Comparing the frequency of bunching for these routes to 61 or 71 routes operating in traffic reveals dramatically less bunching on the busways.
+    <p>Routes <strong>P1</strong> and <strong>G2</strong> operate along dedicated busways. Termed "bus rapid transit," these busways separate buses from on-street traffic. Despite carrying as many passengers as 61x and 71x routes, these buses experience far less bunching.
 
     <h2>Bunching Timelapse Heatmap</h2>
     
-    <p>To see this all in motion, click the "play" button below to see a time lapse of the occurrences of bunching.
+    <p>To see this all in motion, click the "play" button below to see a time lapse of the occurrences of bunching. The timelapse map below shows data for March 1 - 27, 2016 aggregated into a single day. 
 
     <div id="map"></div>
 
-    <p>Data for March 1 - 27, 2016 are combined and presented in a single 18-hour (6:00 am to midnight) time lapse based on the corresponding periods of each day. The heatmap shows spatial frequency of bunching. Since more buses are in operation during rush hour, everything else being equal one would expect to observe more bunching during rush hour (simply by virtue of there being more buses which could bunch).
+    <p>The heatmap shows spatial frequency of bunching. Since more buses are in operation during rush hour, everything else being equal one would expect to observe more bunching during rush hour (simply by virtue of there being more buses which could bunch).
     
-    <p>The timelapse heatmap shows that downtown, Oakland, and the intersection of Murray and Forbes in Squirrel Hill are persistent hot spots for bunching. The movement of bunches through time illustrate that bunching typically snowballs and persists. As above, routes P1 and G2 show comparatively very little bunching.
+    <p>The timelapse heatmap shows that downtown, Oakland, and the intersection of Murray and Forbes in Squirrel Hill are persistent hot spots for bunching. The movement of bunches through time illustrate that bunches snowball and persist. As above, routes P1 and G2 show comparatively infrequent bunching.
 
+    <p>What can be done to reduce the waiting and overcrowding caused by bus bunching in Pittsburgh? The evidence above suggests that one possible solution would be to create new Bus Rapid Transit lines, especially connecting Downtown, Oakland, and Squirrel Hill. A coalition of community partners are advocating for just that. Learn more about Bus Rapid Transit and their efforts by visiting <a href="http://gettherepgh.org/">www.GetTherePgh.org</a>.
 
     <footer>
       <!-- Social sharing links from FourtonFish -->
@@ -85,10 +84,10 @@
         <li><a href="https://pinboard.in/popup_login/?url=http%3A%2F%2Fbunching.github.io&title=Visualizing%20Pittsburgh's%20Bus%20Bunching&description=Visualizing%20Time%20and%20Location%20Patterns%20of%20Bus%20Bunching%20in%20Pittsburgh" target="_blank" title="Save to Pinboard"><img src="images/simple_icons_black/Pinboard.png"></a></li>
         <li><a href="mailto:?subject=Visualizing%20Pittsburgh's%20Bus%20Bunching&body=Visualizing%20Time%20and%20Location%20Patterns%20of%20Bus%20Bunching%20in%20Pittsburgh:%20http%3A%2F%2Fbunching.github.io" target="_blank" title="Email"><img src="images/simple_icons_black/Email.png"></a></li>
       </ul>
-      <p>Visualization created by <a href="http://www.markegge.com">Mark Egge</a>. April 28, 2016. Code on GitHub: <a href="https://github.com/markegge/bunching" target="_BLANK">Data Processing</a>, <a href="https://github.com/bunching/bunching.github.io" target="_BLANK">Visualization</a>
+      <p>Visualization created by <a href="http://www.markegge.com">Mark Egge</a> for CMU 05-839. April 28, 2016. Code on GitHub: <a href="https://github.com/markegge/bunching" target="_BLANK">Data Processing</a>, <a href="https://github.com/bunching/bunching.github.io" target="_BLANK">Visualization</a>
     </footer>
 
-    <script src="http://d3js.org/d3.v3.js"></script>
+    <script src="js/d3.v3.min.js"></script>
     
     <script type="text/javascript">
       // add routes to select dropdown
@@ -148,8 +147,8 @@
         .domain([0, 1])
         .range(["white", "red"]);
 
-      function loadData(rt, out, dt) {
-          var tsvFile = "data/mean-" + ((dt == 0) ? "obs" : "depart") + "-" + ((out == 0) ? "inbound" : "outbound") + "-" + rt + "-tsv.txt";
+      function loadData(rt, dir) {
+          var tsvFile = "data/mean-depart-" + dir + "-" + rt + "-tsv.txt";
           d3.tsv(tsvFile,
                   function(d) {
                     return {
@@ -161,13 +160,12 @@
                   function(error, tsvData) {
                     if (error) return console.warn(error);
                     data = tsvData;
-                    heatmapChart(rt, out, dt);
+                    heatmapChart(rt, dir);
                   } 
           );
       }
-
       
-      function heatmapChart(rt, out, dt) {
+      function heatmapChart(rt, dir) {
         distMax = d3.max(data, function(d) { return d.distance; });
 
         height = (distMax * 6);// - margin.top - margin.bottom;
@@ -176,10 +174,9 @@
         
         rowVals = new Array(distMax);  
         // fill in the appropriate array elements with landmark names
-        var r = (out == 1) ? "OUTBOUND" : "INBOUND";
         for (var i = 0; i < landmarks.length; i++) {
           var obj = landmarks[i];
-          if(obj.route==rt && obj.rtdir==r) {
+          if(obj.route==rt && obj.rtdir==dir) {
             //console.log(obj.rtdir + obj.HOOD + obj.first_occ);
             rowVals[obj.first_occ] = obj.HOOD;
 
@@ -204,7 +201,6 @@
         var cards = svg.selectAll(".tile")
             //.data(data, function(d) { return d.distance + ':' + d.time; })
             .data(data, function(d) { return d.distance + ':' + d.time; });
-        
 
         // enter
         cards.enter().append("rect")
@@ -225,29 +221,35 @@
       // load landmarks data, then fire up main viz
       d3.json("data/landmarks.json", function(response) { 
         landmarks = response;
-        loadData("61C", 1, 1);
+        loadData('61C', 'outbound');
       });
 
-
+      function switchRoute(rt, dir) {
+        d3.select("#rt").property("value", rt);
+        d3.select('input[name="dir"]:checked').node().value
+      }
       // when the user form is updated, fire the appropriate update
-      function updateChart() { 
-
-          var rt = d3.select("#rt").property('value'),
-              dir = d3.select('input[name="dir"]:checked').node().value,
-              tm = 1; // = d3.select("input[name='tm']:checked").node().value;
-            //console.log("d3 method: " + rt + " " + dir + " " + tm)
-          loadData(rt, dir, tm); 
+      function updateChart(rt, dir) { 
+          if (typeof rt === 'undefined')
+            rt = d3.select("#rt").property('value');
+          else
+            d3.select("#rt").property("value", rt);
+          if (typeof dir === 'undefined')
+            dir = d3.select('input[name="dir"]:checked').node().value;
+          else
+            d3.select("#" + dir).property("checked", true);
+          //console.log("d3 method: " + rt + " " + dir)
+          loadData(rt, dir); 
       }
 
       d3.select("#rt").on("change", function() { updateChart(); });
-      d3.selectAll("#dir").on("change", function() { updateChart(); });
-      //d3.selectAll("#tm").on("change", function() { updateChart(); }); 
+      d3.selectAll("input[name='dir']").on("change", function() { updateChart(); });
 
       // to do: configure pre-caching for files.
     </script>
 
     <!-- include cartodb.js library -->
-    <script src="http://libs.cartocdn.com/cartodb.js/v3/3.15/cartodb.js"></script>
+    <script src="js/cartodb.js"></script>
 
     <script>
       cartodb.createVis('map', "https://markegge.cartodb.com/api/v2/viz/ad750b84-fddb-11e5-918e-0ea31932ec1d/viz.json")
