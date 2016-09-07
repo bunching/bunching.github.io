@@ -266,13 +266,13 @@
   {
     "route": "61C",
     "rtdir": "inbound",
-    "HOOD": "S Squirrel Hill",
+    "HOOD": "Greenfield",
     "first_occ": 43
   },
   {
     "route": "61C",
     "rtdir": "inbound",
-    "HOOD": "Greenfield",
+    "HOOD": "S Squirrel Hill",
     "first_occ": 46
   },
   {
@@ -386,13 +386,13 @@
   {
     "route": "61D",
     "rtdir": "inbound",
-    "HOOD": "S Squirrel Hill",
+    "HOOD": "Greenfield",
     "first_occ": 17
   },
   {
     "route": "61D",
     "rtdir": "inbound",
-    "HOOD": "Greenfield",
+    "HOOD": "S Squirrel Hill",
     "first_occ": 20
   },
   {
